@@ -1,11 +1,16 @@
-import './App.css';
+import "./App.css";
 // import Login from "./Authentication/Login"
-import SignUp from './Authentication/SignUp';
+// import SignUp from "./Authentication/SignUp";
+import Routes from 'routes';
+import { ThemeProvider } from '@mui/material/styles';
+// import themes from 'themes';
 
 function App() {
+  
   return (
-    // <Login />
-    <SignUp />
+    <ThemeProvider >
+      <Routes />
+    </ThemeProvider>
   );
 }
 
